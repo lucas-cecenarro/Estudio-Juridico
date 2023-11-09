@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+@media (max-width: 767px) {}
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20;
+}
+a:active{
+    outline: none;
+}
+body {
+    padding-top: 100px; /* Añade espacio en la parte superior para el header fijo */
+    /* Puedes ajustar este valor según la altura de tu header */
+    margin: 0;
+    padding: 0;
+    background: url(images/martillo4.webp);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+}
+.titulo{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: black;
+    height: auto;  
+}
+.header{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 100%; /* Ajusta el ancho al 100% */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+.header .titulo{
+    display: flex;
+    justify-content: left;
+}
+.header .logo{
+    cursor: pointer; 
+}
+.header .logo img{
+    height: 90px;
+    width: auto;
+    transition: all; 
+    padding: 2px; 
+    right: 10px;
+    border-radius: 10px;
+}
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+.header .inicio{
+    cursor: pointer;
+}
+.header .inicio:hover{
+    transform: scale(1.1);
+}
+.header .laboral{
+    cursor: pointer;
+}
+.header .laboral:hover{
+    transform: scale(1.1);
+}
+.header .civil{
+    cursor: pointer;
+}
+.header .civil:hover{
+    transform: scale(1.1);
+}
+.header .previsional{
+    cursor: pointer;
+}
+.header .previsional:hover{
+    transform: scale(1.1);
+}
+.header .contacto{
+    cursor: pointer;
+}
+.header .contacto:hover{
+    transform: scale(1.1);
+}
+.menu {
+    user-select: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    position: relative;
+    margin-right: 20px;
+    border-bottom: 1px solid #ccc; /* Línea gris para separación */
+    padding-bottom: 5px; /* Espaciado inferior opcional */
+}
+.menu-text {
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 125%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.submenu li {
+    margin: 5px;
+    border-bottom: 1px solid gray; /* Línea gris para separación */
+    padding-bottom: 5px; /* Espaciado inferior opcional */
+    border-radius: 3px;
+}
+.menu-item:hover .submenu {/* Estilos para mostrar el submenu al pasar el mouse */
+    display: block;
+    transform: scale(1.1);
+}
+.espacio{
+    margin-top: 180px;
+}
+.contenedor {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px; /* Ajusta el espaciado según tus preferencias */
+    color: white;
+    background: url(images/madera2.webp);
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+}
+
+.imagen-bienvenidos{
+    max-width: auto; /* Ajusta el tamaño de la imagen según tus preferencias */
+    margin-top: 20px; 
+    height: 300px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+}
+
+.texto-bienvenidos {
+    max-width: 45%; /* Ajusta el ancho del contenedor de texto según tus preferencias */
+    text-align: center;
+    padding: 50px;
+    
+}
+.derlaboral{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    
+}
+.derlaboral img{
+    border-radius: 10px;
+}
+.dercivil{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.dercivil img{
+    border-radius: 10px;
+}
+.derprevisional{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.derprevisional img{
+    border-radius: 10px;
+}
+.derpenal{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.derpenal img{
+    border-radius: 10px;
+}
+.textabog{
+    margin: 40px;
+}
+.form {
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 400px; /* Establecer un ancho máximo para evitar que sea demasiado ancho */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+.consulta-titulo{
+    user-select: none;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 50px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.espacio-footer{
+    margin-top: 100px;
+}
+.MapasinBorde{
+    border: 0px;
+}
+.Mapa{
+	width:40%;
+	height:209px;
+	overflow:hidden;
+	box-sizing: border-box;
+	float:left;
+    border-radius: 20px;
+}
+footer{
+	padding: 20px;
+	background-color: #333;
+	width:100%;
+	overflow:hidden;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+	-moz-box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+	box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+}
+footer p{
+    width: auto;
+    font-family: "Raleway", sans-serif;
+    font-size:1.2em;
+    color:#FFF;
+    text-align:right;
+    line-height:1.5em;
+    margin-top:0px;
+}
+.Informacion {
+    width: 50%; /* Establece el ancho de la sección de información al 50% del footer */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+/* Estilos para los párrafos de información */
+.Informacion p {
+    margin: 10px 0; /* Agrega espacio vertical entre los párrafos de información */
+}
+@media only screen and (max-width: 600px) {
+    
+}
