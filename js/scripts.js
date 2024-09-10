@@ -11,3 +11,6 @@ laboralMenu.addEventListener("click", function () {
         submenu.style.maxHeight = submenu.scrollHeight + "px";
     }
 });
+
+
+  
