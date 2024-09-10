@@ -1,0 +1,720 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+@media (max-width: 767px) {}
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20;
+}
+html {
+    scroll-behavior: smooth;
+}
+a:active{
+    outline: none;
+}
+body {
+    padding-top: 100px; /* Añade espacio en la parte superior para el header fijo */
+    /* Puedes ajustar este valor según la altura de tu header */
+    margin: 0;
+    padding: 0;
+    background: url(images/martillo4.webp);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+}
+.titulo{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: black;
+    height: auto;  
+}
+.header{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 100%; /* Ajusta el ancho al 100% */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+.header .titulo{
+    display: flex;
+    justify-content: left;
+}
+.header .logo{
+    cursor: pointer; 
+}
+.header .logo img{
+    height: 90px;
+    width: auto;
+    transition: all; 
+    padding: 2px; 
+    right: 10px;
+    border-radius: 10px;
+}
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+.header .inicio{
+    cursor: pointer;
+}
+.header .inicio:hover{
+    transform: scale(1.1);
+}
+.header .laboral{
+    cursor: pointer;
+}
+.header .laboral:hover{
+    transform: scale(1.1);
+}
+.header .civil{
+    cursor: pointer;
+}
+.header .civil:hover{
+    transform: scale(1.1);
+}
+.header .previsional{
+    cursor: pointer;
+}
+.header .previsional:hover{
+    transform: scale(1.1);
+}
+.header .contacto{
+    cursor: pointer;
+}
+.header .contacto:hover{
+    transform: scale(1.1);
+}
+.menu {
+    user-select: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    position: relative;
+    margin-right: 20px;
+    border-bottom: 1px solid #ccc; /* Línea gris para separación */
+    padding-bottom: 5px; /* Espaciado inferior opcional */
+}
+.menu-text {
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 125%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+.submenu li {
+    margin: 5px;
+    border-bottom: 1px solid gray; /* Línea gris para separación */
+    padding-bottom: 5px; /* Espaciado inferior opcional */
+    border-radius: 3px;
+}
+.menu-item:hover .submenu {/* Estilos para mostrar el submenu al pasar el mouse */
+    display: block;
+    transform: scale(1.1);
+}
+.espacio{
+    margin-top: 180px;
+}
+.contenedor {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px; /* Ajusta el espaciado según tus preferencias */
+    color: white;
+    background: url(images/madera2.webp);
+}
+
+.imagen-bienvenidos{
+    max-width: 40%; /* Ajusta el tamaño de la imagen según tus preferencias */
+    border-radius: 10px;
+}
+
+.texto-bienvenidos {
+    max-width: 50%; /* Ajusta el ancho del contenedor de texto según tus preferencias */
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: burlywood;
+}
+.derlaboral{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    
+}
+.derlaboral img{
+    border-radius: 10px;
+}
+.cont-despidos{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.cont-despidos h2{
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text-desp{
+    width: 100%;
+    padding: 20px;
+}
+
+.cont-contratos{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.cont-contratos h3{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.cont-contratos h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.text-contratos{
+    width: 100%;
+    padding: 20px;
+}
+.cont-accident-1,
+.cont-accident-2{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 360px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-accident-1 h2,
+.cont-accident-2 h2{
+    margin: 0 auto;
+    align-self: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cont-accident-1 img,
+.cont-accident-2 img{
+    align-self: center;
+    display: flex;
+    height: 260px;
+    width: auto;
+    border-radius: 20px;
+}
+.text-accident{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.dercivil{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.dercivil img{
+    border-radius: 10px;
+}
+.cont-familia-1{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-familia-2{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 550px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-familia-1 h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.cont-familia-2 h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cont-familia img{
+    display: flex;  
+    height: 300px;
+    width: auto;
+}
+.text-familia{
+    width: 100%;
+    padding: 20px;
+}
+.derprevisional{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.derprevisional img{
+    border-radius: 10px;
+}
+.cont-propiedad-1{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 450px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-propiedad-2{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-propiedad-1 h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.cont-propiedad-2 h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.text-propiedad{
+    padding: 20px;
+}
+.derpenal{
+    user-select: none;
+    margin: 110px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+}
+.derpenal img{
+    border-radius: 10px;
+}
+.cont-previsional{
+    user-select: none;
+    margin: 100px;
+    display: flex;
+    height: 450px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-previsional h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.text-previsional{
+    width: 100%;
+    padding: 20px;
+}
+.textabog{
+    margin: 40px;
+}
+.form {
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 400px; /* Establecer un ancho máximo para evitar que sea demasiado ancho */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+.consulta-titulo{
+    user-select: none;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 50px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.espacio-footer{
+    margin-top: 100px;
+}
+.MapasinBorde{
+    border: 0px;
+}
+.Mapa{
+	width:40%;
+	height:209px;
+	overflow:hidden;
+	box-sizing: border-box;
+	float:left;
+    border-radius: 20px;
+}
+footer{
+	padding: 20px;
+	background-color: #333;
+	width:100%;
+	overflow:hidden;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+	-moz-box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+	box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.62);
+}
+footer p{
+    width: auto;
+    font-family: "Raleway", sans-serif;
+    font-size:1.2em;
+    color:#FFF;
+    text-align:right;
+    line-height:1.5em;
+    margin-top:0px;
+}
+.Informacion {
+    width: 50%; /* Establece el ancho de la sección de información al 50% del footer */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+/* Estilos para los párrafos de información */
+.Informacion p {
+    margin: 10px 0; /* Agrega espacio vertical entre los párrafos de información */
+}
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 160px;
+        text-align: center;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header li{
+        margin: 5px;
+    }
+    .header .logo img {
+        display: none;
+    }
+    .titulo{
+        font-size: 25px;
+        
+        left: 40px;
+        width: auto;
+    }
+    .texto-bienvenidos h2 {
+        margin-bottom: 15px; /* Aumenta el espacio debajo del título */
+    }
+    
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección de flexbox a columna */
+        padding: 20px; /* Reduce el espaciado */
+    }
+    .imagen-bienvenidos {
+        max-width: 100%; /* Haz que la imagen ocupe el ancho completo del contenedor */
+        margin-bottom: 20px; /* Añade espacio entre la imagen y el texto */
+    }
+    .texto-bienvenidos {
+        font-size: 14px;
+        max-width: 100%; /* Haz que el texto ocupe el ancho completo del contenedor */
+        
+    }
+    .derlaboral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0; /* Ajusta el margen vertical */
+        height: auto;
+    }
+    .derlaboral h1{
+        text-align: center;
+    }
+    .derlaboral img{
+        height: 200px;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .derlaboral p{
+        font-size: 14px;
+    }
+    .dercivil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0; /* Ajusta el margen vertical */
+        height: auto;
+    }
+    .dercivil h1{
+        text-align: center;
+    }
+    .dercivil img{
+        height: 200px;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .dercivil p{
+        font-size: 14px;
+    }
+    .derprevisional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0; /* Ajusta el margen vertical */
+        height: auto;
+    }
+    .derprevisional h1{
+        text-align: center;
+    }
+    .derprevisional img{
+        height: 200px;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .derprevisional p{
+        font-size: 14px;
+    }
+    
+    .derpenal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0; /* Ajusta el margen vertical */
+        height: auto;
+    }
+    .derpenal h1{
+        text-align: center;
+    }
+    .derpenal img{
+        height: 200px;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .derpenal p{
+        font-size: 14px;
+    }
+
+    .Mapa {
+        width: 80%; /* Haz que el mapa ocupe el ancho completo del contenedor */
+        height: 150px; /* Redefine la altura del mapa */
+        margin-bottom: 20px; /* Añade espacio inferior */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px; /* Ajusta el relleno superior e inferior */
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .cont-despidos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+        margin: 20px;
+        
+    }
+    .cont-despidos h2{
+        text-align: center;
+        font-size: 19px;
+    }
+    .cont-contratos{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 50px;
+    }
+    .cont-contratos h3{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .cont-contratos h2{
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .cont-accident-1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 50px;
+        
+    }
+    .cont-accident-2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 50px;
+    }
+
+    .cont-accident-1 h2,
+    .cont-accident-2 h2{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .text-accident{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .cont-accident-1 img,
+    .cont-accident-2 img{
+        width: auto;
+        height: 150px;
+    }
+
+    .cont-familia-1{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: auto;
+    }
+    .cont-familia-2{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: auto;
+    }
+    .cont-propiedad-1{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: auto;
+    }
+    .cont-propiedad-2{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: auto;
+    }
+    .cont-previsional{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        height: auto;
+    }
+}
